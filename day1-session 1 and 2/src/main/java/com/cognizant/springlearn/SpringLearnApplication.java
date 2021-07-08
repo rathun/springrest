@@ -40,10 +40,18 @@ public class SpringLearnApplication {
 
 		LOGGER.info("START");
 		ApplicationContext context = new ClassPathXmlApplicationContext("country.xml");
-		Country country = (Country) context.getBean("country", Country.class);
-		Country anotherCountry = context.getBean("country", Country.class);
-		LOGGER.debug("Country : {}", country.toString());
-		LOGGER.debug("Country : {}", anotherCountry);
+//		Country country = (Country) context.getBean("country", Country.class);
+//		Country anotherCountry = context.getBean("country", Country.class);
+//		LOGGER.debug("Country : {}", country.toString());
+//		LOGGER.debug("Country : {}", anotherCountry);
+List<Country> countries = (List<Country>) context.getBean("countryList");
+		
+		
+		for(Country country: countries)
+		{	
+			LOGGER.debug("{} as with short name {}.",country.getName(),country.getName());
+		}
+		LOGGER.info("END of displayCountry()");
 		LOGGER.info("END");
 	}
 
