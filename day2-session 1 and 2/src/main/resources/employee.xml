@@ -4,43 +4,43 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="1" class="com.cts.Employee">
+	<bean id="no1" class="com.cts.Employee">
 		<property name="id" value="1"/>
 		<property name="name" value="Rathu"/>
 		<property name="salary" value="30000"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="2" class="com.cts.Employee">
+	<bean id="no2" class="com.cts.Employee">
 		<property name="id" value="2"/>
 		<property name="name" value="Surya"/>
 		<property name="salary" value="40000"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="3" class="com.cts.Employee">
+	<bean id="no3" class="com.cts.Employee">
 		<property name="id" value="3"/>
 		<property name="name" value="karthick"/>
 		<property name="salary" value="27500"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="4" class="com.cts.Employee">
+	<bean id="no4" class="com.cts.Employee">
 		<property name="id" value="4"/>
 		<property name="name" value="nagu"/>
 		<property name="salary" value="45000"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="5" class="com.cts.Employee">
+	<bean id="no5" class="com.cts.Employee">
 		<property name="id" value="5"/>
 		<property name="name" value="ashwin"/>
 		<property name="salary" value="20000"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="6" class="com.cts.Employee">
+	<bean id="no6" class="com.cts.Employee">
 		<property name="id" value="6"/>
 		<property name="name" value="bhavani"/>
 		<property name="salary" value="25000"/>
 		<property name="permanent" value="true"/>
 	</bean>
-	<bean id="7" class="com.cts.Employee">
+	<bean id="no7" class="com.cts.Employee">
 		<property name="id" value="7"/>
 		<property name="name" value="chandru"/>
 		<property name="salary" value="200000"/>
@@ -50,13 +50,13 @@ https://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean id="employeeList" class="java.util.ArrayList">
 		<constructor-arg>
 			<list>
-				<ref bean="1"/>
-				<ref bean="2"/>
-				<ref bean="3"/>
-				<ref bean="4"/>
-				<ref bean="5"/>
-				<ref bean="6"/>
-				<ref bean="7"/>
+				<ref bean="no1"/>
+				<ref bean="no2"/>
+				<ref bean="no3"/>
+				<ref bean="no4"/>
+				<ref bean="no5"/>
+				<ref bean="no6"/>
+				<ref bean="no7"/>
 			</list>
 		</constructor-arg>
 	</bean>
