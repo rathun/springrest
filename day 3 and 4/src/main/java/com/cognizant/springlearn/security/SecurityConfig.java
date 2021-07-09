@@ -29,7 +29,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.csrf().disable().httpBasic().and()
-				.authorizeRequests().antMatchers("/countries").hasRole("USER")
+				.authorizeRequests()
+				//.antMatchers("/countries").hasRole("USER")
 				.antMatchers("/authenticate").hasAnyRole("USER", "ADMIN").anyRequest()
 				.authenticated().and()
 				.addFilter(new JwtAuthorizationFilter(authenticationManager()));
