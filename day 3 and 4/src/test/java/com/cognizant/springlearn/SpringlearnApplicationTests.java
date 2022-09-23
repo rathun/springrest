@@ -38,7 +38,7 @@ class SpringRestLearnApplicationTests {
 		actions.andExpect(status().isOk());
 		actions.andExpect(jsonPath("$.code").exists());
 		actions.andExpect(jsonPath("$.code").value("IN"));
-		actions.andExpect(jsonPath("$.name").value("India"));
+		actions.andExpect(jsonPath("$.name").value("Indonesia"));
 	}
 
 	@Test
